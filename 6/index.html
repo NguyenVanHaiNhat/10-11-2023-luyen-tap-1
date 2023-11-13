@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 6</title>
+</head>
+<body>
+<script>
+  let sale = parseInt(prompt("Nhập doanh thu : "));
+  let rose = 0;
+  if (0 <= sale < 200 ) {
+    rose = sale*3/100;
+  } else if (sale < 500) {
+    rose = sale*4/100;
+  } else if (sale >= 500) {
+    rose = sale*5/100;
+  } else {
+    alert("nhập sai kìa cu")
+  }
+  alert("hoa hồng = " + rose + " triệu");
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+  let name = prompt("nhập tên học sinh : ")
+  let a = parseInt(prompt("điểm kiểm tra"));
+  let b = parseInt(prompt("điểm giữa kì"));
+  let c = parseInt(prompt("điểm cuối kì"));
+  let point = (a + b*2 + c*3)/6;
+
+  if (point >= 0 && point <= 10) {
+    if (point < 5) {
+      alert(name + " không đạt")
+    } else if (point < 7) {
+      alert(name + " đạt")
+    } else if (point <10) {
+      alert(name + " tốt");
+    } else {
+      alert(name + " giỏi");
+    }
+  }
+
+
+</script>
+</body>
+</html>

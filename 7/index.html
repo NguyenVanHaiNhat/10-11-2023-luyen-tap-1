@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+<script>
+    let minute = parseInt(prompt("số phút đã gọi : "));
+    let tong = 0;
+    let fee = 0;
+    let phicodinh = 25000;
+
+    if (minute > 200) {
+        fee = (minute - 200)*200 + 150*400 + 50*600;
+    }   else if (minute > 50) {
+        fee = (minute - 50)*400 + 50*600;
+    } else {
+        fee = minute * 600;
+    }
+    tong = phicodinh + fee;
+    alert("số phút bạn đã gọi : " + minute);
+    alert("tiền cước là : " + tong);
+</script>
+</body>
+</html>
